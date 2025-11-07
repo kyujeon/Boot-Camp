@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.input input {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 0.6rem 0.2rem;
+  font-size: 1rem;
+  outline: none;
+  margin-right: 0.5rem;
+}
+
+.add-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.add-btn:hover {
+  background-color: #555;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #333;
+}
+
+label span {
+  font-size: 1rem;
+  color: #444;
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  color: #333;
+}
+
+.footer {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.footer > p:nth-child(2) {
+  font-style: italic;
+  color: gray;
+}
+
+@media (max-width: 520px) {
+  .todo-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
