@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 전체페이지 -->
+    <div class="page">
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="header__content">
+          <!-- 당근 마켓 로고 -->
+          <img
+            src="/img/daangn_logo.png"
+            alt="로고"
+            class="header__content__logo"
+          />
+          <!-- 앱 다운로드 버튼 -->
+          <button class="header__content__btn">앱 다운로드</button>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main class="main">
+        <!-- 텍스트 베너 -->
+        <div class="main__content">
+          <div class="main__content__banner">
+            <!-- 검색 다이얼로그 -->
+            <img src="/icon/location-white.svg" alt="아이콘" class="icon" />
+            <p class="text">위치에서 원룸 찾고 계신가요?</p>
+          </div>
+        </div>
+        <!-- 검색창 및 다이얼로그-->
+        <div class="main__content__search-box">
+          <button class="dialog-btn">
+            <img
+              src="/icon/location-primary.svg"
+              alt="위치"
+              class="dialog-btn__icon"
+            />
+            <p>서초동</p>
+          </button>
+          <div class="search-box">
+            <!-- 검색창 / 인기 검색어-->
+            <div class="search-bar">
+              <div class="search-bar2">
+                <select class="search-bar__selcet">
+                  <option>중고거래</option>
+                </select>
+                <input
+                  type="text"
+                  class="search"
+                  placeholder="검색어를 입력해주세요."
+                />
+              </div>
+              <button><img src="/icon/btn.svg" alt="버튼" /></button>
+            </div>
+            <!-- 인기검색 -->
+            <div class="recommend">
+              <p style="color: grey">인기 검색어</p>
+              <p>에어컨</p>
+              <p>에어컨청소</p>
+              <p>노트북</p>
+              <p>원룸</p>
+              <p>현대 중고차</p>
+              <p>이사짐알바</p>
+              <p>근처 맛집</p>
+              <p>투표</p>
+            </div>
+          </div>
+        </div>
+        <!-- 네비게이션 및 버튼 박스 -->
+        <div class="nav_btn">
+          <!-- 네비게이션 버튼 -->
+          <nav class="main__nav">
+            <div>
+              <img src="/icon/중고거래.png" alt="중고거래" />
+              <div class="nav_icon">중고거래</div>
+            </div>
+            <div>
+              <img src="/icon/알바.png" alt="알바" />
+              <div class="nav_icon">알바</div>
+            </div>
+            <div>
+              <img src="/icon/부동산.png" alt="부동산" />
+              <div class="nav_icon">부동산</div>
+            </div>
+            <div>
+              <img src="/icon/중고차.png" alt="중고차" />
+              <div class="nav_icon">중고차</div>
+            </div>
+            <div>
+              <img src="/icon/동네업체.png" alt="동네업체" />
+              <div class="nav_icon">동네업체</div>
+            </div>
+            <div>
+              <img src="/icon/동네생활.png" alt="동네생활" />
+              <div class="nav_icon">동네생활</div>
+            </div>
+            <div>
+              <img src="/icon/모임.png" alt="모임" />
+              <div class="nav_icon">모임</div>
+            </div>
+          </nav>
+          <!-- 추천동네 -->
+          <div class="nav__location">
+            <button class="nav__location__btn">송도동</button>
+            <button class="nav__location__btn">역삼동</button>
+            <button class="nav__location__btn">물금읍</button>
+            <button class="nav__location__btn">봉당읍</button>
+            <button class="nav__location__btn">배방읍</button>
+            <button class="nav__location__btn">서초동</button>
+            <button class="nav__location__btn">옥정동</button>
+            <button class="nav__location__btn">신림동</button>
+            <button class="nav__location__btn">불당동</button>
+            <button class="nav__location__btn">향남읍</button>
+
+            <button class="nav__location__btn">청담동</button>
+            <button class="nav__location__btn">다산동</button>
+            <button class="nav__location__btn">별내동</button>
+            <button class="nav__location__btn">화도읍</button>
+            <button class="nav__location__btn">다사읍</button>
+            <button class="nav__location__btn">마곡동</button>
+            <button class="nav__location__btn">압구정동</button>
+            <button class="nav__location__btn">배곧동</button>
+            <button class="nav__location__btn">고덕동</button>
+            <button class="nav__location__btn">오창읍</button>
+          </div>
+        </div>
+      </main>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="footer__div">
+          <!-- 왼쪽 편 로고, 소셜미디어 아이콘 -->
+          <div class="footer__div__logo">
+            <!-- 로고 -->
+            <img src="/img/daangn_logo.png" alt="로고" class="footer__logo" />
+            <!-- 소셜미디어 아이콘 -->
+            <div class="footer__div__icon">
+              <a href="#" target="_blank" class="facebook">
+                <img src="/img/facebook.svg" alt="페이스북" />
+              </a>
+              <a href="#" target="_blank" class="instagram">
+                <img src="/img/instagram.svg" alt="인스타그램" />
+              </a>
+              <a href="#" target="_blank" class="youtube">
+                <img src="/img/youtube.svg" alt="유튜브" />
+              </a>
+            </div>
+          </div>
+          <!-- 회사, 탐색, 비지니스, Karrot, 문의 -->
+          <nav class="footer__nav">
+            <ul>
+              <h3>회사</h3>
+              <li><a href="#">회사 소개</a></li>
+              <li><a href="#">당근페이</a></li>
+              <li><a href="#">팀문화</a></li>
+              <li><a href="#">서비스 소개</a></li>
+              <li><a href="#">블로그</a></li>
+              <li><a href="#">채용</a></li>
+            </ul>
+            <ul>
+              <h3>탐색</h3>
+              <li><a href="#">중고거래</a></li>
+              <li><a href="#">부동산</a></li>
+              <li><a href="#">중고차</a></li>
+              <li><a href="#">알바</a></li>
+              <li><a href="#">동네업체</a></li>
+              <li><a href="#">동네생활</a></li>
+              <li><a href="#">모임</a></li>
+              <li><a href="#">채팅하기</a></li>
+            </ul>
+            <ul>
+              <h3>비지니스</h3>
+              <li><a href="#">당근 비지니스</a></li>
+              <li><a href="#">제휴 문의</a></li>
+              <li><a href="#">광고 문의</a></li>
+            </ul>
+            <ul>
+              <h3>Karrot</h3>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">United States</a></li>
+              <li><a href="#">United Kingdom</a></li>
+              <li><a href="#">日本</a></li>
+            </ul>
+            <ul>
+              <h3>문의</h3>
+              <li><a href="#">IR</a></li>
+              <li><a href="#">PR</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 회사정보 -->
+        <section class="footer__nav__info">
+          <div>
+            <strong>(주) 당근마켓</strong> <br />
+            <strong>대표</strong> 김용현, 황도연 ❘
+            <strong>사업자번호</strong> 375-87-00088
+          </div>
+          <div><strong>직업정보제공사업 신고번호</strong> J1200020200016</div>
+          <div><strong>통신판매업 신고번호</strong> 2021-서울서초-2875</div>
+          <div><strong>호스팅 사업자</strong> Amazon Web Service(AWS)</div>
+          <div>
+            <strong>주소</strong> 서울특별시 구로구 디지털로 300, 10층
+            (당근서비스)
+          </div>
+          <div>
+            <strong>전화</strong> 1877-9737 ❘
+            <strong>고객문의</strong> cs@daangnservice.com
+          </div>
+          <p>
+            <a href="#"><strong>이용약관</strong></a> &nbsp; &nbsp;
+            <a href="#"><strong>개인정보처리방침</strong></a> &nbsp; &nbsp;
+            <a href="#"><strong>위치기반서비스 이용약관</strong></a> &nbsp;
+            &nbsp;
+            <a href="#"><strong>이용자보호 비전과 계획</strong></a> &nbsp;
+            &nbsp; <a href="#"><strong>청소년보호정책</strong></a> &nbsp; &nbsp;
+          </p>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

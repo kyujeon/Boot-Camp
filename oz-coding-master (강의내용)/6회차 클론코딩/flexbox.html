@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스박스</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            padding:0;
+            list-style-type: none;
+            height: 200px;
+
+            /*
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            flex-flow 로 같이 쓸 수 있다.
+            flex-flow: row wrap; 
+            */
+
+            justify-content:space-around;
+            align-items: center;
+        }
+        li{
+            background-color: bisque;
+        }
+        li:nth-child(2n){
+            background-color:beige;
+        }
+
+        li:nth-child(2){
+            /* (옆으로) flex-grow: 1; */
+            /* (위로) flex-shrink: 1; */
+        
+        }
+
+        li:nth-child(4){
+            /* flex-grow: 2; */
+        }
+
+        li:nth-child(2n-1){
+            /* flex-basis: 100px; */
+            flex: 1 1 120px; 
+            /* flex는 grow, shrink, basis 순서 / 개별 속성을 더욱 많이 사용하는거 같다 */
+        }
+
+        h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2> 강아지의 품종을 알아봅시다 </h2>
+    <ul>
+        <li> 도베르만 </li>
+        <li> 마메시바 </li>
+        <li> 포메라니안 </li>
+        <li> 푸들 </li>
+        <li> 프렌치 불독 </li>
+    </ul>
+</body>
+</html>

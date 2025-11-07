@@ -1,0 +1,90 @@
+// 반복문
+
+// 앞서 조건문을 이해하기 위해 자바스크립트 인터프리터가 소스 코드를 따라 분기하는 경로를 따라 언급했다.
+// 반복문 경로를 자기 자신 쪽으로 구부려 코드 일부를 반복하는 문이 루프라고 한다.
+// *자바스크립트에는 while, do-while, for, for-of (변형인 for-await), for-in 다섯 가지 루프가 있다.
+
+// *1. while
+// if 문이 자바스크립트의 기본 조건문인 것과 마찬가지로, while 문은 자스크립트의 기본 반복 루프 입니다.
+
+// while (expression) {
+//   statement;
+// }
+
+// while 문은 실행하면 인터프리터는 먼저 expression을 평가한다.
+// 표현식의 값이 false 같은 값이면 인터프리터는 루프 바디를 건너뛰고 다음 문으로 이동한다.
+// 반면, expression이 true와 같은 값이면 인터프리터는 statement를 실행하고,
+// 루프 맨 위로 올라가 expression을 평가하길 반복한다.
+// 달리 말하자면 인터프리터는 expression이 true 같은 값인 동안 (while) statement를 반복적으로 실행한다고 할 수 있다.
+// while(true)로 설정하면, 무한 루프를 만들 수 있다. > 단, 자바스크립트에서는 정확히 같은 동작을 무한 반복하길 원하지 않는다.
+
+let count = 0;
+
+while (count < 10) {
+  console.log("현재 count 값", count);
+  count = count + 1; // 약자로  count++; 로 사용할 수 있다.
+}
+
+// 위 예제에서 count 변수는 0으로 시작하고 루프 바디를 실행할 때마다 1씩 증가하는 로직이다.
+// 루프를 10회 실행하면 count 가 더 이상 10보다 작지 않음으로 표현식은 false로 바뀐다.
+// 인터프리터는 while 문을 끝내고 프로그램 다음 문으로 이동한다.
+
+//2. do-while
+// do-while 루프는 while 루프와 비슷하지만, 루프 표현식이 루프 맨 위가 아니라 맨 아래에서 평가된다.
+
+do statement;
+while (expression);
+
+// do-while 루프는 while에 비해 자주 사용되지 않는다.
+// 사실 루프 바디를 최소 한 번은 실행해야 하는 상황이 그리 많지는 않기 때문ㅇ다.
+
+function printArray(array) {
+  let i = 0;
+  let len = array.lengthl;
+
+  if (len === 0) {
+    console.log ("빈 배열 입니다.");
+  } else {
+    do{
+      console.log(array[i]);
+    } while (++1 < len);
+  }
+}
+
+// [참고]
+// do-while 루프와 일반적인 while 루프 문법에는 두 가지 차이가 있습니다.
+// 첫 번째로 do-while 루프는 루프 시작을 알리는 do 키워드와 루프 끝을 알리는 조건을 평가하는 while 키워드가 모두 있어야 한다는 점.
+// 두 번째는 do-while 루프는 반드시 항상 세미콜론으로 끝나야 한다. 대신, while 루프는 루프 바디를 중괄호로 감싼 경우에는 세미콜론이 필요하지 않다.
+
+// *3 for
+// for 문은 자바스크립트의 대표적인 반복문
+
+for(initialize; Texst; increment){
+  statement;
+}
+
+// initialize; Texst; increment는 세미콜론으로 구분하여 각각 루프 변수의 초기화, 테스트, 증감을 담당한다.
+// initialize - 초기값 / test - 테스트 / increment - 증강 
+// 이 요소들은 루프의 첫 번째 행에 모음으로써 for 루프가 무엇을 하는지 이해하기 쉽다.
+// 루프 변수의 초기화나 증감을 잊어버리는 실수를 방지할 수 있다는 편리함이 있다.
+
+// while 문과의 비교
+
+let count = 0; // initialize
+
+while (count < 10 /*increment*/) { 
+  console.log("현재 count 값", count); // statement
+  count = count + 1; // 약자로  count++; 로 사용할 수 있다. 
+}
+
+while(test){
+  statement;
+  increment;
+}
+
+// for (initialize; Test; increment) { statement }
+
+for(let count = 0; count < 10 ; count++ ){
+  console.log("현재 count 값", count);
+}
+
